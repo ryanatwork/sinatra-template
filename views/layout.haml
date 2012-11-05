@@ -1,8 +1,10 @@
 !!! 5
 %html
   %head
-    %title= "Sinatra Template"
-    %link{:href => 'http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css', :rel => 'stylesheet', :type => 'text/css'}
+    %title Sinatra Template
+    %link{:href => 'css/bootstrap.min.css', :rel => 'stylesheet', :media => 'screen'}
   %body
-    %div.container
+    .container
       #content= yield
+    %script{:src => "http://code.jquery.com/jquery-latest.js"}
+    %script{:src => "js/bootstrap.min.js"}
